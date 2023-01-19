@@ -5,7 +5,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface LottoService {
+interface LottoAPI {
     @GET("/common.do?method=getLottoNumber")
     fun getLottoInfo(@Query("drwNo") drwNo:Int): Call<Lotto>
 }
