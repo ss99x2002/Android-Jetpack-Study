@@ -14,8 +14,8 @@ class LottoViewModel : BaseObservable() {
         LottoRepository.getLottoInfo(drwNo,object : LottoRepository.GetDataCallback<Lotto>{
             override fun onSuccess(data: Lotto?) {
                 data?.let{
-                    val result = "${it.drwNoDate} 회차 당첨번호 : " + "${it.drwtNo1}"+ "${it.drwtNo2}"+
-                            "${it.drwtNo3}" + "${it.drwtNo4}"+ "${it.drwtNo5}"+ "${it.drwtNo6}"
+                    val result = "${it.drwNoDate} 회차 당첨번호 : " + "${it.drwtNo1}  "+ "${it.drwtNo2}  "+
+                            "${it.drwtNo3}  " + "${it.drwtNo4}  "+ "${it.drwtNo5}  "+ "${it.drwtNo6}  "
                     lottoInfo.set(result)
                     Log.e("summer","result : $result")
                 }
